@@ -1,0 +1,80 @@
+.BackgroundImage {
+    position: fixed;
+    background-image: url(./Images/BackgroundImage.png);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.Paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+    width: 1000px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 80px;
+    backdrop-filter: blur(5px);
+    letter-spacing: 10px;
+    text-shadow: 10px 10px 15px rgb(248, 8, 44);
+}
+
+.MainButton {
+    z-index: 1;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all 1s;
+}
+
+button:hover {
+    color: rgb(243, 243, 243);
+    transition: all 1s;
+}
+
+.Bar1 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 80px;
+    width: 10px;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.Bar2 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 80px;
+    width: 10px;
+    transition: all 1s;
+    z-index: -1;
+}
+
+button:hover .Bar1 {
+    width: 50%;
+    transition: all 1s;
+}
+
+button:hover .Bar2 {
+    width: 50%;
+    transition: all 1s;
+}
