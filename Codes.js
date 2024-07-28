@@ -1,4 +1,4 @@
 function onClickHandel()
 {
-    alert("沒什麽用");
+    alert("這個按鈕沒什麽用哦");
 }
